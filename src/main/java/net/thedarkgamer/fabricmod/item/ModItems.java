@@ -14,7 +14,7 @@ import org.lwjgl.system.CallbackI;
 public class ModItems {
 
     //Exotics
-    public static final Item EXOTIC_MATTER = registerItem("overworld_exotic_matter", new Item(new FabricItemSettings().group(ItemGroup.MISC).fireproof().rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).snack().alwaysEdible().build())));
+    public static final Item EXOTIC_MATTER = registerItem("overworld_exotic_matter", new Item(new FabricItemSettings().group(ModItemGroups.ITEMS).fireproof().rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).snack().alwaysEdible().build())));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(FabricTest.MOD_ID, name), item);

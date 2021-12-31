@@ -1,6 +1,7 @@
 package net.thedarkgamer.fabricmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.thedarkgamer.fabricmod.block.ModBlocks;
 import net.thedarkgamer.fabricmod.item.ModItems;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,5 +18,6 @@ public class FabricTest implements ModInitializer {
 		LOGGER.info("Loading mod: " + MOD_DISPLAY_NAME);
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
