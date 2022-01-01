@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fabricmod:block/overworld_exotic_slab"
+    },
+    "type=double": {
+      "model": "fabricmod:block/overworld_exotic_block"
+    },
+    "type=top": {
+      "model": "fabricmod:block/overworld_exotic_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "fabricmod:block/overworld_exotic_block",
+    "top": "fabricmod:block/overworld_exotic_block",
+    "side": "fabricmod:block/overworld_exotic_block"
+  }
+}

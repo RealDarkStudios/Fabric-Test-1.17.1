@@ -3,6 +3,10 @@
 
   "block.fabricmod.overworld_exotic_ore": "Exotic Ore (Overworld)",
   "block.fabricmod.overworld_exotic_block": "Exotic Block (Overworld)",
+  "block.fabricmod.overworld_exotic_stairs": "Exotic Stairs (Overworld)",
+  "block.fabricmod.overworld_exotic_slab": "Exotic Slab (Overworld)",
+  "block.fabricmod.overworld_exotic_fence": "Exotic Fence (Overworld)",
+  "block.fabricmod.overworld_exotic_fence_gate": "Exotic Fence Gate (Overworld)",
 
   "item.fabricmod.ore_finder": "Ore Finder",
   "block.fabricmod.status_block": "Status Block",
