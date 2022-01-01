@@ -12,6 +12,12 @@
   "block.fabricmod.overworld_exotic_door": "Exotic Door (Overworld)",
   "block.fabricmod.overworld_exotic_trapdoor": "Exotic Trapdoor (Overworld)",
 
+  "item.fabricmod.overworld_exotic_axe": "Exotic Axe (Overworld)",
+  "item.fabricmod.overworld_exotic_hoe": "Exotic Hoe (Overworld)",
+  "item.fabricmod.overworld_exotic_pickaxe": "Exotic Pickaxe (Overworld)",
+  "item.fabricmod.overworld_exotic_shovel": "Exotic Shovel (Overworld)",
+  "item.fabricmod.overworld_exotic_sword": "Exotic Sword (Overworld)",
+
   "item.fabricmod.ore_finder": "Ore Finder",
   "block.fabricmod.status_block": "Status Block",
 

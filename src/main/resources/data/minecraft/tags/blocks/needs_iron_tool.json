@@ -2,6 +2,14 @@
   "replace": false,
   "values": [
     "fabricmod:overworld_exotic_ore",
-    "fabricmod:overworld_exotic_block"
+    "fabricmod:overworld_exotic_block",
+    "fabricmod:overworld_exotic_button",
+    "fabricmod:overworld_exotic_door",
+    "fabricmod:overworld_exotic_fence",
+    "fabricmod:overworld_exotic_fence_gate",
+    "fabricmod:overworld_exotic_pressure_plate",
+    "fabricmod:overworld_exotic_slab",
+    "fabricmod:overworld_exotic_stairs",
+    "fabricmod:overworld_exotic_trapdoor"
   ]
 }

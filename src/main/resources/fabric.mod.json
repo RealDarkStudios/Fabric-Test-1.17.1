@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "fabricmod",
-  "version": "1.17.1-0.0.9",
+  "version": "1.17.1-0.0.10",
 
   "name": "Fabric Test Mod",
   "description": "Official Fabric Test Mod for Fabric 1.17.1",

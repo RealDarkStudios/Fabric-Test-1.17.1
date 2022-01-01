@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "fabricmod:item/overworld_exotic_hoe"
+  }
+}
