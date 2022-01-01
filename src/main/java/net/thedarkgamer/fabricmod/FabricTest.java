@@ -1,7 +1,10 @@
 package net.thedarkgamer.fabricmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.render.RenderLayer;
 import net.thedarkgamer.fabricmod.block.ModBlocks;
+import net.thedarkgamer.fabricmod.block.custom.ModDoorBlock;
 import net.thedarkgamer.fabricmod.item.ModItems;
 import net.thedarkgamer.fabricmod.registries.ModRegistries;
 import org.apache.logging.log4j.LogManager;
@@ -21,5 +24,8 @@ public class FabricTest implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModRegistries.registerModFuels();
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OVERWORLD_EXOTIC_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OVERWORLD_EXOTIC_TRAPDOOR, RenderLayer.getCutout());
 	}
 }

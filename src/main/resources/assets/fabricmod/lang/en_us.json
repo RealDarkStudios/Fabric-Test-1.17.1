@@ -9,6 +9,8 @@
   "block.fabricmod.overworld_exotic_fence_gate": "Exotic Fence Gate (Overworld)",
   "block.fabricmod.overworld_exotic_button": "Exotic Button (Overworld)",
   "block.fabricmod.overworld_exotic_pressure_plate": "Exotic Pressure Plate (Overworld)",
+  "block.fabricmod.overworld_exotic_door": "Exotic Door (Overworld)",
+  "block.fabricmod.overworld_exotic_trapdoor": "Exotic Trapdoor (Overworld)",
 
   "item.fabricmod.ore_finder": "Ore Finder",
   "block.fabricmod.status_block": "Status Block",

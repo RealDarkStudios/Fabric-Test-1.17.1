@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "fabricmod:block/overworld_exotic_door_top",
+    "bottom": "fabricmod:block/overworld_exotic_door_bottom"
+  }
+}
