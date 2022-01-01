@@ -10,26 +10,26 @@ import net.thedarkgamer.fabricmod.FabricTest;
 
 public class ModTags {
     public static class Blocks {
-        public static final Tag<Block> VALUABLE_BLOCKS = createTag("valuable_blocks");
+        public static final Tag.Identified<Block> VALUABLE_BLOCKS = createTag("valuable_blocks");
 
-        private static Tag<Block> createTag(String name) {
+        private static Tag.Identified<Block> createTag(String name) {
             return TagFactory.BLOCK.create(new Identifier(FabricTest.MOD_ID, name));
         }
 
-        private static Tag<Block> createCommonTag(String name) {
+        private static Tag.Identified<Block> createCommonTag(String name) {
             return TagFactory.BLOCK.create(new Identifier("c", name));
         }
     }
 
     public static class Items {
 
-        public static final Tag<Item> EXOTICS = createTag("exotics");
+        public static final Tag.Identified<Item> EXOTICS = createTag("exotics");
 
-        private static Tag<Item> createTag(String name) {
+        private static Tag.Identified<Item> createTag(String name) {
             return TagFactory.ITEM.create(new Identifier(FabricTest.MOD_ID, name));
         }
 
-        private static Tag<Item> createCommonTag(String name) {
+        private static Tag.Identified<Item> createCommonTag(String name) {
             return TagFactory.ITEM.create(new Identifier("c", name));
         }
     }
