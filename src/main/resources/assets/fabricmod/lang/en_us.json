@@ -1,8 +1,13 @@
 {
   "item.fabricmod.overworld_exotic_matter": "Exotic Matter (Overworld)",
+
   "block.fabricmod.overworld_exotic_ore": "Exotic Ore (Overworld)",
   "block.fabricmod.overworld_exotic_block": "Exotic Block (Overworld)",
 
+  "item.fabricmod.ore_finder": "Ore Finder",
+  "block.fabricmod.status_block": "Status Block",
+
   "itemGroup.fabricmod.items": "Fabric Mod - Items",
-  "itemGroup.fabricmod.blocks": "Fabric Mod - Blocks"
+  "itemGroup.fabricmod.blocks": "Fabric Mod - Blocks",
+  "itemGroup.fabricmod.tools": "Fabric Mod - Tools"
 }

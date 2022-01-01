@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "fabricmod:overworld_exotic_ore"
+  },
+  "result": "fabricmod:overworld_exotic_matter",
+  "experience": 0.7,
+  "cookingtime": 100
+}

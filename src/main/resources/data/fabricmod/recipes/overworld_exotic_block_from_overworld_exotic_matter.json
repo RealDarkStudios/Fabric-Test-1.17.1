@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "eee",
+    "eee",
+    "eee"
+  ],
+  "key": {
+    "e": {
+      "item": "fabricmod:overworld_exotic_matter"
+    }
+  },
+  "result": {
+    "item": "fabricmod:overworld_exotic_block",
+    "count": 1
+  }
+}

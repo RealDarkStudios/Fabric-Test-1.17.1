@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "fabricmod:overworld_exotic_ore",
-    "fabricmod:overworld_exotic_block"
+    "fabricmod:overworld_exotic_block",
+    "fabricmod:status_block"
   ]
 }

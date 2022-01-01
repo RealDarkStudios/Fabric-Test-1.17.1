@@ -10,4 +10,5 @@ import net.thedarkgamer.fabricmod.block.ModBlocks;
 public class ModItemGroups {
     public static final ItemGroup ITEMS = FabricItemGroupBuilder.build(new Identifier(FabricTest.MOD_ID, "items"), () -> new ItemStack(ModItems.EXOTIC_MATTER));
     public static final ItemGroup BLOCKS = FabricItemGroupBuilder.build(new Identifier(FabricTest.MOD_ID, "blocks"), () -> new ItemStack(ModBlocks.OVERWORLD_EXOTIC_ORE.asItem()));
+    public static final ItemGroup TOOLS = FabricItemGroupBuilder.build(new Identifier(FabricTest.MOD_ID, "tools"), () -> new ItemStack(ModItems.ORE_FINDER));
 }

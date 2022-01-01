@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fabricmod:overworld_exotic_block"
+    }
+  ],
+  "result": {
+    "item": "fabricmod:overworld_exotic_matter",
+    "count": 9
+  }
+}
