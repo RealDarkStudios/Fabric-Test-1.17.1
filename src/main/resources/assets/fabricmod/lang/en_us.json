@@ -9,5 +9,8 @@
 
   "itemGroup.fabricmod.items": "Fabric Mod - Items",
   "itemGroup.fabricmod.blocks": "Fabric Mod - Blocks",
-  "itemGroup.fabricmod.tools": "Fabric Mod - Tools"
+  "itemGroup.fabricmod.tools": "Fabric Mod - Tools",
+
+  "tooltip.fabricmod.ore_finder": "Hold \u00A7eSHIFT\u00A7r for more info!",
+  "tooltip.fabricmod.ore_finder_shift": "Discover \u00A76Valuable Ores\u00A7r down below!"
 }

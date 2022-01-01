@@ -2,14 +2,22 @@ package net.thedarkgamer.fabricmod.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.thedarkgamer.fabricmod.util.ModTags;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Objects;
 
 public class OreFinderItem extends Item {
@@ -22,6 +30,7 @@ public class OreFinderItem extends Item {
         if(context.getWorld().isClient()) {
             BlockPos posClicked = context.getBlockPos();
             PlayerEntity player = Objects.requireNonNull(context.getPlayer());
+            player.getItemCooldownManager().set(this, 20);
             boolean foundBlock = false;
 
             for(int i = 0; i <= posClicked.getY(); i++) {
@@ -48,8 +57,20 @@ public class OreFinderItem extends Item {
         return true;
     }
 
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+
+        if(Screen.hasShiftDown()) {
+            tooltip.add(new TranslatableText("tooltip.fabricmod.ore_finder_shift"));
+        } else {
+            tooltip.add(new TranslatableText("tooltip.fabricmod.ore_finder"));
+        }
+
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+
     private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE || block == Blocks.REDSTONE_ORE || block == Blocks.LAPIS_ORE || block == Blocks.GOLD_ORE || block == Blocks.EMERALD_ORE;
+        return block.getDefaultState().isIn(ModTags.Blocks.VALUABLE_BLOCKS);
     }
 
     private void outputValuableCoordinates(Block blockFound, BlockPos pos, PlayerEntity player) {

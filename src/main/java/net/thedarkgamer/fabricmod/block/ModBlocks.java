@@ -18,7 +18,7 @@ public class ModBlocks {
 
     public static final Block OVERWORLD_EXOTIC_ORE = registerBlock("overworld_exotic_ore", new Block(FabricBlockSettings.of(Material.STONE).hardness(2).strength(2).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
     public static final Block OVERWORLD_EXOTIC_BLOCK = registerBlock("overworld_exotic_block", new Block(FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
-    public static final Block STATUS_BLOCK = registerBlock("status_block", new StatusBlock(FabricBlockSettings.of(Material.METAL).hardness(1).strength(1).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.TOOLS));
+    //public static final Block STATUS_BLOCK = registerBlock("status_block", new StatusBlock(FabricBlockSettings.of(Material.METAL).hardness(1).strength(1).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.TOOLS));
 
     private static Block registerBlock(String name, Block block, FabricItemSettings settings) {
         registerBlockItem(name, block, settings);
