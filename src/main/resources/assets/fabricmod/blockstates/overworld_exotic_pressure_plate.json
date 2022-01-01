@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "fabricmod:block/overworld_exotic_pressure_plate"
+    },
+    "powered=true": {
+      "model": "fabricmod:block/overworld_exotic_pressure_plate_down"
+    }
+  }
+}

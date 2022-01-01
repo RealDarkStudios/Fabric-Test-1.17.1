@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "fabricmod:block/overworld_exotic_block"
+  }
+}

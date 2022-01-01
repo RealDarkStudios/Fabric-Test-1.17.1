@@ -9,6 +9,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.thedarkgamer.fabricmod.FabricTest;
+import net.thedarkgamer.fabricmod.block.custom.ModPressurePlateBlock;
+import net.thedarkgamer.fabricmod.block.custom.ModStoneButtonBlock;
 import net.thedarkgamer.fabricmod.item.ModItemGroups;
 import net.thedarkgamer.fabricmod.block.custom.ModStairsBlock;
 
@@ -21,7 +23,8 @@ public class ModBlocks {
     public static final Block OVERWORLD_EXOTIC_SLAB = registerBlock("overworld_exotic_slab", new SlabBlock(FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
     public static final Block OVERWORLD_EXOTIC_FENCE = registerBlock("overworld_exotic_fence", new FenceBlock(FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
     public static final Block OVERWORLD_EXOTIC_FENCE_GATE = registerBlock("overworld_exotic_fence_gate", new FenceGateBlock(FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
-
+    public static final Block OVERWORLD_EXOTIC_BUTTON = registerBlock("overworld_exotic_button", new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
+    public static final Block OVERWORLD_EXOTIC_PRESSURE_PLATE = registerBlock("overworld_exotic_pressure_plate", new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
 
     private static Block registerBlock(String name, Block block, FabricItemSettings settings) {
         registerBlockItem(name, block, settings);
