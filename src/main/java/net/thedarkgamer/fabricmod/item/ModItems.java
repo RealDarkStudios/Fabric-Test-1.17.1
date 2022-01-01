@@ -2,7 +2,9 @@ package net.thedarkgamer.fabricmod.item;
 
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
+import net.minecraft.util.Arm;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
@@ -23,7 +25,11 @@ public class ModItems {
     public static final Item EXOTIC_HOE = registerItem("overworld_exotic_hoe", new ModHoeItem(ModToolMaterial.EXOTIC_OVERWORLD, -2, 1.0F, new FabricItemSettings().group(ModItemGroups.TOOLS).rarity(Rarity.RARE)));
     public static final Item EXOTIC_PICKAXE = registerItem("overworld_exotic_pickaxe", new ModPickaxeItem(ModToolMaterial.EXOTIC_OVERWORLD,1, -1.8F, new FabricItemSettings().group(ModItemGroups.TOOLS).rarity(Rarity.RARE)));
     public static final Item EXOTIC_SHOVEL = registerItem("overworld_exotic_shovel", new ShovelItem(ModToolMaterial.EXOTIC_OVERWORLD, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroups.TOOLS).rarity(Rarity.RARE)));
-    public static final Item EXOTIC_SWORD = registerItem("overworld_exotic_sword", new SwordItem(ModToolMaterial.EXOTIC_OVERWORLD, 3, -1.4F, new FabricItemSettings().group(ModItemGroups.TOOLS).rarity(Rarity.RARE)));
+public static final Item EXOTIC_SWORD = registerItem("overworld_exotic_sword", new SwordItem(ModToolMaterial.EXOTIC_OVERWORLD, 3, -1.4F, new FabricItemSettings().group(ModItemGroups.TOOLS).rarity(Rarity.RARE)));
+    public static final Item EXOTIC_HELMET = registerItem("overworld_exotic_helmet", new ArmorItem(ModArmorMaterial.OVERWORLD_EXOTIC, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroups.ARMOR).rarity(Rarity.RARE)));
+    public static final Item EXOTIC_CHESTPLATE = registerItem("overworld_exotic_chestplate", new ArmorItem(ModArmorMaterial.OVERWORLD_EXOTIC, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroups.ARMOR).rarity(Rarity.RARE)));
+    public static final Item EXOTIC_LEGGINGS = registerItem("overworld_exotic_leggings", new ArmorItem(ModArmorMaterial.OVERWORLD_EXOTIC, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroups.ARMOR).rarity(Rarity.RARE)));
+    public static final Item EXOTIC_BOOTS = registerItem("overworld_exotic_boots", new ArmorItem(ModArmorMaterial.OVERWORLD_EXOTIC, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroups.ARMOR).rarity(Rarity.RARE)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(FabricTest.MOD_ID, name), item);
