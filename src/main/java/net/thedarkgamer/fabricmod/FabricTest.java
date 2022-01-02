@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 import net.thedarkgamer.fabricmod.block.ModBlocks;
 import net.thedarkgamer.fabricmod.config.ModConfigs;
+import net.thedarkgamer.fabricmod.enchantments.ModEnchantments;
 import net.thedarkgamer.fabricmod.item.ModItems;
 import net.thedarkgamer.fabricmod.registries.ModRegistries;
 import net.thedarkgamer.fabricmod.util.ModCommandRegister;
@@ -34,6 +35,8 @@ public class FabricTest implements ModInitializer {
 
 		ModCommandRegister.registerCommands();
 		ModEventsRegister.registerEvents();
+
+		ModEnchantments.registerModEnchantments();
 
 		LOGGER.info("Mod loaded: " + MOD_DISPLAY_NAME);
 	}
