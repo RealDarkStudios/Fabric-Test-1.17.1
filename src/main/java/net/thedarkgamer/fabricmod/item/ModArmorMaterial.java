@@ -35,7 +35,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
         return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT});
     })*/
 
-    OVERWORLD_EXOTIC("overworld_exotic", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F, 0.3F, () -> {
+    EXOTIC_OVERWORLD("overworld_exotic", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F, 0.3F, () -> {
         return Ingredient.ofItems(ModItems.EXOTIC_MATTER);
     });
 

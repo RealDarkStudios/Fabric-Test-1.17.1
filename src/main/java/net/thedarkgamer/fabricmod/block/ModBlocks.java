@@ -25,6 +25,7 @@ public class ModBlocks {
     public static final Block OVERWORLD_EXOTIC_PRESSURE_PLATE = registerBlock("overworld_exotic_pressure_plate", new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool().noCollision()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
     public static final Block OVERWORLD_EXOTIC_DOOR = registerBlock("overworld_exotic_door", new ModDoorBlock(FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool().nonOpaque()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
     public static final Block OVERWORLD_EXOTIC_TRAPDOOR = registerBlock("overworld_exotic_trapdoor", new ModTrapdoorBlock(FabricBlockSettings.of(Material.METAL).hardness(4).strength(3).requiresTool().nonOpaque()), new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.BLOCKS));
+    public static final Block TESTBLOCK = registerBlock("test_block", new TestBlock(FabricBlockSettings.of(Material.METAL).hardness(0).strength(0).requiresTool()), new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroups.TOOLS));
 
     private static Block registerBlock(String name, Block block, FabricItemSettings settings) {
         registerBlockItem(name, block, settings);

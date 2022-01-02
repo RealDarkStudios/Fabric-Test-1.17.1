@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "fabricmod:block/test_block"
+    },
+    "clicked=true": {
+      "model": "fabricmod:block/test_block_clicked"
+    }
+  }
+}

@@ -4,9 +4,11 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 import net.thedarkgamer.fabricmod.block.ModBlocks;
-import net.thedarkgamer.fabricmod.block.custom.ModDoorBlock;
+import net.thedarkgamer.fabricmod.config.ModConfigs;
 import net.thedarkgamer.fabricmod.item.ModItems;
 import net.thedarkgamer.fabricmod.registries.ModRegistries;
+import net.thedarkgamer.fabricmod.util.ModCommandRegister;
+import net.thedarkgamer.fabricmod.util.ModEventsRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,6 +21,8 @@ public class FabricTest implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModConfigs.registerConfigs();
+
 		LOGGER.info("Loading mod: " + MOD_DISPLAY_NAME);
 
 		ModItems.registerModItems();
@@ -27,5 +31,10 @@ public class FabricTest implements ModInitializer {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OVERWORLD_EXOTIC_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OVERWORLD_EXOTIC_TRAPDOOR, RenderLayer.getCutout());
+
+		ModCommandRegister.registerCommands();
+		ModEventsRegister.registerEvents();
+
+		LOGGER.info("Mod loaded: " + MOD_DISPLAY_NAME);
 	}
 }

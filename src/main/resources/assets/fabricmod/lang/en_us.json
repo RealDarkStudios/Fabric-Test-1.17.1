@@ -24,7 +24,9 @@
   "item.fabricmod.overworld_exotic_boots": "Exotic Boots (Overworld)",
 
   "item.fabricmod.ore_finder": "Ore Finder",
+  "item.fabricmod.data_tablet": "Data Tablet",
   "block.fabricmod.status_block": "Status Block",
+  "block.fabricmod.test_block": "Test Block",
 
   "itemGroup.fabricmod.items": "Fabric Mod - Items",
   "itemGroup.fabricmod.blocks": "Fabric Mod - Blocks",

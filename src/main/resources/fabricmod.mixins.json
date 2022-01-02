@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "FabricTestMixin"
+    "FabricTestMixin",
+    "ModEntityDataSaverMixin"
   ],
   "injectors": {
     "defaultRequire": 1

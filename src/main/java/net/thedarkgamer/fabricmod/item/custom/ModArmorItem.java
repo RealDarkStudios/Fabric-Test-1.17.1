@@ -16,21 +16,21 @@ import net.thedarkgamer.fabricmod.item.ModArmorMaterial;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
-    private static final Map<ArmorMaterial, StatusEffect> MATERIAL_TO_EFFECT_MAP = new ImmutableMap.Builder<ArmorMaterial, StatusEffect>().put(ModArmorMaterial.OVERWORLD_EXOTIC, StatusEffects.RESISTANCE).build();
+    private static final Map<ArmorMaterial, StatusEffect> MATERIAL_TO_EFFECT_MAP = new ImmutableMap.Builder<ArmorMaterial, StatusEffect>().put(ModArmorMaterial.EXOTIC_OVERWORLD, StatusEffects.RESISTANCE).build();
 
-    private static int amplifier;
+    private static int configAmplifyValue;
 
-    public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, int amplifier, Settings settings) {
+    public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, int configAmplifyValue, Settings settings) {
         super(material, slot, settings);
-        setAmplifier(amplifier);
+        setAmplifier(configAmplifyValue);
     }
 
     public static int getAmplifier() {
-        return amplifier;
+        return configAmplifyValue;
     }
 
-    public static void setAmplifier(int amplifier) {
-        ModArmorItem.amplifier = amplifier;
+    public static void setAmplifier(int configAmplifyValue) {
+        ModArmorItem.configAmplifyValue = configAmplifyValue;
     }
 
     @Override
@@ -64,7 +64,7 @@ public class ModArmorItem extends ArmorItem {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect);
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect, 20, amplifier, true, true));
+            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect, 20, configAmplifyValue, true, true));
 
             /*if(new Random().nextFloat() > 0.99f) { // 40% of damaging the armor! Possibly!
                 player.getInventory().damageArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
